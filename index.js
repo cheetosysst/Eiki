@@ -38,5 +38,6 @@ router.get("/github", function(req, res) {
 // Public : 用來提供靜態內容，像是 icon
 app.use(express.static("public"));
 
+// Port : 聽 Port 哭的聲音
 app.use("/", router);
 app.listen(port);
