@@ -1,0 +1,23 @@
+{
+  "name": "eiki",
+  "version": "0.0.1",
+  "description": "靠北成功（試寫，不一定會上線）",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheetosysst/Eiki.git"
+  },
+  "author": "Thect",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cheetosysst/Eiki/issues"
+  },
+  "homepage": "https://github.com/cheetosysst/Eiki#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
