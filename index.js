@@ -9,7 +9,6 @@ const express 	= require('express');
 const app 		= express();
 const router 	= express.Router();
 const port    = process.env.PORT || 8086;
-// const favicon 	= require('serve-favicon');
 require('dotenv').config();
 
 // Router 
