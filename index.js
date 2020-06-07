@@ -12,6 +12,7 @@ const port = process.env.PORT || 8086;
 require('dotenv').config();
 
 // Router 
+const homepage = require("./apps/homepage/app.js")
 
 // 	Print method on console
 router.use(function(req, res, next) {
@@ -20,9 +21,7 @@ router.use(function(req, res, next) {
 });
 
 // Homepage : 如題，是首頁
-router.get("/", function(req, res) {
-	res.send('home page!');
-});
+router.get("/", homepage);
 
 // API
 router.get("/api", function(req, res) {
