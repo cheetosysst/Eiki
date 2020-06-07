@@ -5,10 +5,10 @@
 // ========================================
 
 // Library
-const express 	= require('express');
-const app 		= express();
-const router 	= express.Router();
-const port    = process.env.PORT || 8086;
+const express = require('express');
+const app = express();
+const router = express.Router();
+const port = process.env.PORT || 8086;
 require('dotenv').config();
 
 // Router 
@@ -24,14 +24,29 @@ router.get("/", function(req, res) {
 	res.send('home page!');
 });
 
+// API
+router.get("/api", function(req, res) {
+	res.send('api placeholder');
+});
+
+// submit : 提交頁
+router.get("/submit", function(req, res) {
+	res.send("submit placeholder");
+});
+
+// Login : 登入頁
+router.get("/login", function(req, res) {
+	res.send("login placeholder");
+});
+
 // About : 關於頁，目前只會引導到 Github
 router.get("/about", function(req, res) {
-	res.redirect(301, "https://github.com/cheetosysst/Eiki")
+	res.send("about placeholder");
 });
 
 // Github : 引導到 Github
 router.get("/github", function(req, res) {
-	res.redirect(301, "https://github.com/cheetosysst/Eiki")
+	res.redirect("https://github.com/cheetosysst/eiki")
 });
 
 // Public : 用來提供靜態內容，像是 icon
