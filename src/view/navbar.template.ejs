@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	<a class="navbar-brand" href="#"><%- locals.title %></a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,18 +8,34 @@
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-			<a class="nav-link" href="#">首頁<% if (locals.current == "home") {%><span class="sr-only">(current)</span><% } %> </a>
+				<a class="nav-link" href="#">首頁<% if (locals.current == "home") {%><span
+						class="sr-only">(current)</span><% } %> </a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="#">提交</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">登入</a>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					社群
+				</a>
+				<div class="dropdown-menu border-0 bg-dark" aria-labelledby="navbarDropdownMenuLink">
+					<a class="dropdown-item text-light nav-dropdown" href="#">Facebook</a>
+					<a class="dropdown-item text-light nav-dropdown" href="#">Twitter</a>
+					<a class="dropdown-item text-light nav-dropdown" href="#">Telegram</a>
+				</div>
+			</li>
+			<li>
+				<a class="nav-link" href="#">關於</a>
 			</li>
 		</ul>
-		<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		</form>
+		<ul class="navbar-nav">
+			<li>
+				<a class="nav-link" href="#">登入</a>
+			</li>
+			<li>
+				<a class="nav-link" href="#">註冊</a>
+			</li>
+		</ul>
 	</div>
 </nav>

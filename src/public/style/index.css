@@ -1,0 +1,11 @@
+body {
+	font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+}
+
+.dropdown-item:focus.nav-dropdown, .dropdown-item:hover.nav-dropdown {
+	background-color: #343a40 !important;
+}
+
+.navbar.sticky-bottom > small > a {
+	color: var(--teal);
+}

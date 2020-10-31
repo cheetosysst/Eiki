@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<%- include("head.template.ejs", {"title": "Eiki"}) %> 
+	<%- include("head.template.ejs", {"title": locals.title}) %> 
 </head>
 <body>
 	<%- include("navbar.template.ejs", {"title": "Eiki", "current": "home"}) %> 
-	hello world
+	<div class="container mt-2">
+		<h1>Eiki</h2>
+		<h4 class="text-secondary ">Anonymous posting platform for everyone.</h4>
+		
+		<hr class="my-0">
+		<p class="mt-0">This is a demo of <b>Eiki</b>, a platform to submit anonymous post and post to multiple social media.</p>
+
+		<h3>Post Rule</h3>
+		<p>Write posting rule for your platform here.</p>
+		<div class="card mb-1">
+			<div class="card-body">
+				<h5>Account with accepted email and name displayed</h5>
+				<b>First 10 mins:</b> <span class="badge badge-success">通過</span> >=3 and <span class="badge badge-danger">反對</span>=0 <br>
+
+				<b>After 10 mins:</b> <span class="badge badge-success">通過</span> higher than <span class="badge badge-danger">反對</span>
+			</div>
+		</div><div class="card mb-1">
+			<div class="card-body">
+				<h5>Account with accepted email</h5>
+				<b>First 10 mins:</b> <span class="badge badge-success">通過</span> >=5 and <span class="badge badge-danger">反對</span>=0 <br>
+	
+				<b>10 mins to 1 hour:</b> <span class="badge badge-success">通過</span> higher than <span class="badge badge-danger">反對</span><br>
+				
+				<b>After 1 hour:</b> <span class="badge badge-success">通過</span> higher than <span class="badge badge-danger">反對</span>
+			</div>
+		</div>
+		<div class="card mb-1">
+			<div class="card-body">
+				<h5>Account without accepted email and name displayed</h5>
+				<b>First 10 mins:</b> <span class="badge badge-success">通過</span> >=7 and <span class="badge badge-danger">反對</span>=0 <br>
+				<b>10 mins to 1 hour:</b> <span class="badge badge-success">通過</span> 5 more than <span class="badge badge-danger">反對</span><br>
+				
+				<b>After 10 mins:</b> <span class="badge badge-success">通過</span> 3 more than <span class="badge badge-danger">反對</span>
+			</div>
+		</div>
+		<div class="card mb-1">
+			<div class="card-body">
+				<h5>Account without accepted email and name displayed</h5>
+				<b>First 1 hour:</b> <span class="badge badge-success">通過</span> 10 more than <span class="badge badge-danger">反對</span> <br>
+				
+				<b>After 1 hour:</b> Reject
+			</div>
+		</div>
+
+
+		<h3>Social Media</h3>
+		<p>All post submitted and checked by the community post will be posted to these social media platform.</p>
+		TODO: add icons here
+		<p>Note that posting to these platform is not supported yet.</p>
+	</div>
+	<%- include("bottomnav.template.ejs") %> 
 	<%- include("bodyend.template.ejs") %> 
 </body>
 </html>
