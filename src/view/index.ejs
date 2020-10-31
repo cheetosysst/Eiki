@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<%- include("head.template.ejs", {"title": "test"}) %> 
+	<%- include("head.template.ejs", {"title": "Eiki"}) %> 
 </head>
 <body>
+	<%- include("navbar.template.ejs", {"title": "Eiki", "current": "home"}) %> 
 	hello world
 	<%- include("bodyend.template.ejs") %> 
 </body>
