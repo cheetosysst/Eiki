@@ -1,11 +1,24 @@
-body {
-	font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+html {
+	position: relative;
+	min-height: 100%;
 }
 
-.dropdown-item:focus.nav-dropdown, .dropdown-item:hover.nav-dropdown {
+body {
+	font-family: "Helvetica", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
+	margin-bottom: 60px;
+}
+
+.dropdown-item:focus.nav-dropdown,
+.dropdown-item:hover.nav-dropdown {
 	background-color: #343a40 !important;
 }
 
-.navbar.sticky-bottom > small > a {
+.footer > small > a {
 	color: var(--teal);
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
