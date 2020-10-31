@@ -1,17 +1,18 @@
 {
   "name": "eiki",
-  "version": "0.0.1",
-  "description": "靠北成功（試寫，不一定會上線）",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js",
-    "start": "node index.js"
+    "start": "node index",
+    "backup": "node index backup",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cheetosysst/Eiki.git"
   },
-  "author": "Thect",
+  "author": "Thect <thect@protonmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cheetosysst/Eiki/issues"
@@ -19,7 +20,7 @@
   "homepage": "https://github.com/cheetosysst/Eiki#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "vue": "^2.6.11"
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
   }
 }
