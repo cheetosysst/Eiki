@@ -5,7 +5,7 @@ html {
 
 body {
 	font-family: "Helvetica", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
-	margin-bottom: 60px;
+	margin-bottom: 100px;
 }
 
 .dropdown-item:focus.nav-dropdown,
@@ -13,7 +13,7 @@ body {
 	background-color: #343a40 !important;
 }
 
-.footer > small > a {
+.footer-text > small > a {
 	color: var(--teal);
 }
 
@@ -21,4 +21,9 @@ body {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	border-top: 1px solid var(--teal);
+}
+
+.card {
+	border-color: var(--teal);
 }
