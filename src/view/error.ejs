@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%- include("head.template.ejs", {"title": locals.title}) %> 
+</head>
+<body>
+	<%- include("navbar.template.ejs", {"title": "Eiki", "current": "home"}) %> 
+	<div class="container mt-2">
+		<h1><%- locals.errorCode %></h1>
+		<h3><%- locals.errorMessage %> </h3>
+	</div>
+		
+	<%- include("bottomnav.template.ejs") %> 
+	<%- include("bodyend.template.ejs") %> 
+</body>
+</html>
