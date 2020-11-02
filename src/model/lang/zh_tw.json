@@ -1,14 +1,17 @@
 {
 	"default": {
-		"name": "映姬 - 匿名發文平台",
+		"name": "映姬",
+		"subtitle": "匿名發文平台",
 		"slogan": "所有人的匿名發文平台",
 		"description": "這是「映姬」的 Demo 版本，可以發布匿名貼文並轉發到各大社群媒體的平台。"
 	},
-	"strings": {
+	"common": {
 		"home": "首頁",
 		"submit": "提交",
 		"social": "社群",
 		"about": "關於",
+		"login": "登入",
+		"register": "註冊",
 		"faq": "常見問答",
 		"privacy": "隱私權政策",
 		"contact": "聯絡方式",
@@ -18,5 +21,8 @@
 			"string2": "提供，並使用",
 			"string3": "發布"
 		}
+	},
+	"error": {
+		"error": "錯誤"
 	}
 }

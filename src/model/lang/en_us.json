@@ -1,14 +1,17 @@
 {
 	"default": {
 		"name": "Eiki",
+		"subtitle": "Anonymous posting platform",
 		"slogan": "Anonymous posting platform for everyone.",
 		"description": "This is a demo of Eiki, a platform to submit anonymous post and post to multiple social media."
 	},
-	"strings": {
+	"common": {
 		"home": "Home",
 		"submit": "Submit",
 		"social": "Social",
 		"about": "About",
+		"login": "Login",
+		"register": "Register",
 		"faq": "FAQ",
 		"privacy": "Privacy",
 		"contact": "Contact",
@@ -18,5 +21,8 @@
 			"string2": ", released under",
 			"string3": ""
 		}
+	},
+	"error": {
+		"error": "Error"
 	}
 }
