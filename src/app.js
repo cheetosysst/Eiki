@@ -3,14 +3,14 @@
 const express = require('express')
 const app = express()
 const path = require('path');
+const config = require("config")
 const route = require('./controller/route')
 const error = require('./controller/error')
 
 app.set('views', path.join(__dirname, 'view'));
 
-require('dotenv').config()
-const port = process.env.port || 3000
-const siteName = process.env.name
+const port = config.get("port") || 3000
+const siteName = config.get("name")
 const version = require('../package').version;
 
 app.set('view engine', 'ejs')
