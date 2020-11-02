@@ -1,16 +1,12 @@
 const express = require("express")
 const router = express.Router()
 
+require('dotenv').config()
+const version = require('../../package').version;
+const strings = require("../model/lang/"+process.env.LANG+".json")
+
 router.get('/', (req, res, next) => {
-	res.render('index', { title: 'Index' });
-});
-
-router.get('/app', (req, res, next) => {
-	res.render('index', { title: 'App' });
-});
-
-router.get('/example', (req, res, next) => {
-	res.render('index', { title: 'Example' });
+	res.render('index', strings);
 });
 
 module.exports = router
