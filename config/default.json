@@ -1,5 +1,6 @@
 {
 	"name": "Eiki",
+	"base_url":"localhost",
 	"port": "3000",
 	"language": "en_us"
 }

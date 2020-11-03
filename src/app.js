@@ -14,6 +14,10 @@ const siteName = config.get("name")
 const version = require('../package').version;
 
 app.set('view engine', 'ejs')
+app.use(function(req, res, next) {
+	console.log(req.method, req.protocol+"://"+config.get("base_url")+req.url)
+	next()
+})
 app.use(express.static('src/public'));
 app.use(route)
 app.use(error)
