@@ -10,8 +10,6 @@ const error = require('./controller/error')
 app.set('views', path.join(__dirname, 'view'));
 
 const port = config.get("port") || 3000
-const siteName = config.get("name")
-const version = require('../package').version;
 
 app.set('view engine', 'ejs')
 app.use(function(req, res, next) {
