@@ -24,5 +24,15 @@
 	},
 	"error": {
 		"error": "錯誤"
+	},
+	"submit": {
+		"rule": {
+			"title": "貼文規範",
+			"rules": [
+				"rule 1",
+				"rule 2",
+				"rule 3"
+			]
+		}
 	}
 }

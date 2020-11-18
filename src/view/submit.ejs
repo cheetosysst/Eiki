@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%- include("head.template.ejs", {"title": locals.default.name+" - "+locals.default.subtitle}) %> 
+</head>
+<body>
+	<%- include("navbar.template.ejs", {"title": locals.default.name, "current": "home", "home": locals.common.home, "submit": locals.common.submit, "social": locals.common.social, "about": locals.common.about, "login": locals.common.login, "register": locals.common.register}) %> 
+	<div class="container mt-2">
+		<h1><%- locals.default.name %></h2>
+		<h4 class="text-secondary "><%- locals.default.slogan%> </h4>
+		
+		<hr class="my-0">
+		<p class="mt-0"><%- locals.default.description %></p>
+		
+		<h3> <%- locals.submit %> </h3>
+	</div>
+	<%- include("bottomnav.template.ejs") %> 
+	<%- include("bodyend.template.ejs") %> 
+</body>
+</html>
